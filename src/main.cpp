@@ -33,7 +33,7 @@ int main(int argc,char * argv[]){
 		fclose(input);fclose(key);
 		return 1;
 	}
-	printf("working...\n");
+	printf("working...\n");fflush(stdout);
 	work(input,key,output,strcmp(argv[2],"encode")==0?0:1);
 	fclose(input);fclose(key);fclose(output);
 	printf("done!\n");
